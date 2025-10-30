@@ -41,7 +41,7 @@
         margin: 0 !important;
         padding: 0 !important;
         width: 100% !important;
-        background-color: #f0f2f5;
+        background-color: #ffffff !important;
       }
       @media screen and (max-width: 600px) {
         .email-container {
@@ -59,8 +59,15 @@
           max-width: 100% !important;
         }
         .stack-column-half td {
-          width: 100% !important;
-          padding: 0 0 16px 0 !important;
+          width: 50% !important;
+          padding: 0 4px 12px 4px !important;
+        }
+        .footer-no-stack td {
+          display: table-cell !important;
+        }
+        .footer-logo {
+          width: 80px !important;
+          padding-right: 12px !important;
         }
         .mobile-side-padding {
           padding-left: 0 !important;
@@ -91,7 +98,6 @@
     style="
       margin: 0 !important;
       padding: 0 !important;
-      background-color: #f0f2f5;
       font-family: 'Google Sans', 'Roboto', Arial, sans-serif;
       color: #202124;
     "
@@ -112,7 +118,7 @@
       awaits.
     </div>
 
-    <center style="width: 100%; background-color: #f0f2f5; padding: 40px 0">
+    <center style="width: 100%; background-color: #ffffff !important">
       <table
         role="presentation"
         cellspacing="0"
@@ -151,22 +157,7 @@
                     border="0"
                   >
                     <tr>
-                      <td
-                        width="60%"
-                        valign="middle"
-                        style="
-                          font-family: 'Roboto Mono', monospace;
-                          font-size: 12px;
-                          color: #c9d1d9;
-                        "
-                        class="figma-bar-text"
-                      >
-                        GDG_ENSIA / DESIGN /
-                        <span style="color: #ffffff; font-weight: 700"
-                          >New_Designer_Onboarding.fig</span
-                        >
-                      </td>
-                      <td width="40%" align="right" valign="middle">
+                      <td valign="middle">
                         <table
                           role="presentation"
                           cellspacing="0"
@@ -174,33 +165,28 @@
                           border="0"
                         >
                           <tr>
-                            <td style="padding-right: 12px">
+                            <td
+                              valign="middle"
+                              style="
+                                font-family: 'Roboto Mono', monospace;
+                                font-size: 12px;
+                                color: #c9d1d9;
+                                padding-right: 12px;
+                              "
+                              class="figma-bar-text"
+                            >
+                              GDG_ENSIA / DESIGN /
+                              <span style="color: #ffffff; font-weight: 700"
+                                >New_Designer_Onboarding.fig</span
+                              >
+                            </td>
+                            <td style="padding-right: 12px" valign="middle">
                               <img
                                 src="https://i.imgur.com/m26gPrM.png"
                                 width="28"
                                 alt="U"
                                 style="border-radius: 50%"
                               />
-                            </td>
-                            <td>
-                              <a
-                                href="https://discord.gg/YourGDGServer"
-                                target="_blank"
-                                style="
-                                  background-color: #4285f4;
-                                  color: #ffffff;
-                                  padding: 10px 16px;
-                                  border-radius: 8px;
-                                  text-decoration: none;
-                                  font-size: 13px;
-                                  font-weight: 700;
-                                  font-family: 'Google Sans', 'Roboto', Arial,
-                                    sans-serif;
-                                "
-                                class="figma-share-button"
-                              >
-                                Discord
-                              </a>
                             </td>
                           </tr>
                         </table>
@@ -702,7 +688,7 @@
                     "
                   >
                     <tr>
-                      <td style="padding: 40px 30px 0 30px !important">
+                      <td style="padding: 40px 30px 20px 30px !important">
                         <p
                           style="
                             margin: 0 0 8px;
@@ -751,6 +737,26 @@
                           in the #verification channel to unlock your role in
                           Discord.
                         </p>
+                        <div style="margin-top: 24px; text-align: center">
+                          <a
+                            href="https://discord.gg/YourGDGServer"
+                            target="_blank"
+                            style="
+                              background-color: #4285f4;
+                              color: #ffffff;
+                              padding: 12px 24px;
+                              border-radius: 8px;
+                              text-decoration: none;
+                              font-size: 15px;
+                              font-weight: 700;
+                              display: inline-block;
+                              font-family: 'Google Sans', 'Roboto', Arial,
+                                sans-serif;
+                            "
+                          >
+                            Open Discord
+                          </a>
+                        </div>
                       </td>
                     </tr>
                   </table>
@@ -769,12 +775,13 @@
                     cellpadding="0"
                     border="0"
                   >
-                    <tr class="stack-column">
+                    <tr class="footer-no-stack">
                       <td
                         width="35%"
                         valign="top"
                         style="padding: 0 20px 20px 0"
                         align="center"
+                        class="footer-logo"
                       >
                         <img
                           src="https://i.imgur.com/Z5GFKzb.png"
@@ -868,6 +875,7 @@
                           cellspacing="0"
                           cellpadding="0"
                           border="0"
+                          style="width: auto !important"
                         >
                           <tr>
                             <td style="padding-right: 10px">

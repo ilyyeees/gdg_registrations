@@ -41,7 +41,7 @@
         margin: 0 !important;
         padding: 0 !important;
         width: 100% !important;
-        background-color: #f4f5f7;
+        background-color: #ffffff !important;
       }
       .project-board-bg {
         background-color: #f4f5f7;
@@ -63,8 +63,15 @@
           max-width: 100% !important;
         }
         .stack-column-half td {
-          width: 100% !important;
-          padding: 0 0 16px 0 !important;
+          width: 50% !important;
+          padding: 0 4px 12px 4px !important;
+        }
+        .footer-no-stack td {
+          display: table-cell !important;
+        }
+        .footer-logo {
+          width: 80px !important;
+          padding-right: 12px !important;
         }
         .mobile-side-padding {
           padding-left: 16px !important;
@@ -88,7 +95,6 @@
     style="
       margin: 0 !important;
       padding: 0 !important;
-      background-color: #f4f5f7;
       font-family: 'Google Sans', 'Roboto', Arial, sans-serif;
       color: #202124;
     "
@@ -109,7 +115,7 @@
     </div>
 
     <center
-      style="width: 100%; background-color: #f4f5f7; padding: 40px 0"
+      style="width: 100%; background-color: #ffffff !important"
       class="project-board-bg"
     >
       <table
@@ -312,7 +318,7 @@
                           "
                         >
                           <tr>
-                            <td style="padding: 24px">
+                            <td style="padding: 32px 24px 24px 24px">
                               <p
                                 style="
                                   margin: 0 0 12px;
@@ -351,7 +357,7 @@
                           "
                         >
                           <tr>
-                            <td style="padding: 24px">
+                            <td style="padding: 32px 24px 24px 24px">
                               <p
                                 style="
                                   margin: 0 0 12px;
@@ -393,16 +399,16 @@
                           "
                         >
                           <tr>
-                            <td style="padding: 24px">
+                            <td style="padding: 32px 24px 24px 24px">
                               <p
                                 style="
                                   margin: 0 0 12px;
                                   font-size: 16px;
                                   font-weight: 700;
-                                  color: #f9ab00;
+                                  color: #fbbc04;
                                 "
                               >
-                                03. Experience
+                                03. Outreach
                               </p>
                               <p
                                 style="
@@ -433,7 +439,7 @@
                           "
                         >
                           <tr>
-                            <td style="padding: 24px">
+                            <td style="padding: 32px 24px 24px 24px">
                               <p
                                 style="
                                   margin: 0 0 12px;
@@ -587,12 +593,13 @@
                     cellpadding="0"
                     border="0"
                   >
-                    <tr class="stack-column">
+                    <tr class="footer-no-stack">
                       <td
                         width="35%"
                         valign="top"
                         style="padding: 0 20px 20px 0"
                         align="center"
+                        class="footer-logo"
                       >
                         <img
                           src="https://i.imgur.com/Z5GFKzb.png"
@@ -687,6 +694,7 @@
                           cellspacing="0"
                           cellpadding="0"
                           border="0"
+                          style="width: auto !important"
                         >
                           <tr>
                             <td style="padding-right: 10px">

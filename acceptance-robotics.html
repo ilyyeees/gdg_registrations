@@ -41,7 +41,7 @@
         margin: 0 !important;
         padding: 0 !important;
         width: 100% !important;
-        background-color: #121212;
+        background-color: #ffffff !important;
       }
       @media screen and (max-width: 600px) {
         .email-container {
@@ -54,6 +54,17 @@
         .stack-column td {
           display: block !important;
           width: 100% !important;
+        }
+        .stack-column-half td {
+          width: 50% !important;
+          padding: 0 4px 12px 4px !important;
+        }
+        .footer-no-stack td {
+          display: table-cell !important;
+        }
+        .footer-logo {
+          width: 80px !important;
+          padding-right: 12px !important;
         }
         .mobile-side-padding {
           padding-left: 20px !important;
@@ -97,7 +108,7 @@
       ENSIA Robotics Division.
     </div>
 
-    <center style="width: 100%; background-color: #121212; padding: 40px 0">
+    <center style="width: 100%; background-color: #ffffff !important">
       <table
         role="presentation"
         cellspacing="0"
@@ -526,12 +537,13 @@
                 border-radius: 16px 16px 0 0;
               "
             >
-              <tr class="stack-column">
+              <tr class="footer-no-stack">
                 <td
                   width="35%"
                   valign="top"
                   style="padding: 0 20px 20px 0"
                   align="center"
+                  class="footer-logo"
                 >
                   <img
                     src="https://i.imgur.com/Z5GFKzb.png"
@@ -613,6 +625,7 @@
                     cellspacing="0"
                     cellpadding="0"
                     border="0"
+                    style="width: auto !important"
                   >
                     <tr>
                       <td style="padding-right: 10px">

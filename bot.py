@@ -32,6 +32,17 @@ async def on_ready():
     print(f'Logged in as {bot.user.name} ({bot.user.id})')
     print('Bot is online and ready to verify members.')
     print('------')
+    # Set a visible presence/status for the bot
+    try:
+        await bot.change_presence(
+            activity=discord.Activity(
+                type=discord.ActivityType.watching,
+                name="made by il.y.s ilyes abbas"
+            ),
+            status=discord.Status.online
+        )
+    except Exception as e:
+        print(f"Could not set presence: {e}")
 
 @bot.command(name='verify')
 async def verify(ctx, *, token: str = None):
@@ -69,22 +80,28 @@ async def verify(ctx, *, token: str = None):
         cursor = conn.cursor()
 
         # 4. Find the token in the database
-        cursor.execute("SELECT role_id, verified, first_name, email FROM members WHERE token = ?", (token,))
+        cursor.execute("SELECT role_id, verified, first_name, last_name, email FROM members WHERE token = ?", (token,))
         result = cursor.fetchone()
 
         # 5. Handle cases: Invalid token, token already used
         if result is None:
-            await ctx.send(f"Sorry {ctx.author.mention}, that token is invalid. Please check your email again or contact an admin.", delete_after=15)
-            await asyncio.sleep(15)
-            await ctx.message.delete()
+            # Delete the user's message immediately for privacy
+            try:
+                await ctx.message.delete()
+            except Exception:
+                pass
+            await ctx.send(f"Sorry {ctx.author.mention}, that token is invalid. Please check your email again or contact an admin.")
             return
 
-        role_id, verified, first_name, email = result
+        role_id, verified, first_name, last_name, email = result
 
         if verified == 1:
-            await ctx.send(f"Hi {ctx.author.mention}, this token has already been used. If you believe this is an error, please contact an admin.", delete_after=15)
-            await asyncio.sleep(15)
-            await ctx.message.delete()
+            # Delete the user's message immediately for privacy
+            try:
+                await ctx.message.delete()
+            except Exception:
+                pass
+            await ctx.send(f"Hi {ctx.author.mention}, this token has already been used. If you believe this is an error, please contact an admin.")
             return
 
         # 6. Assign the role
@@ -105,7 +122,9 @@ async def verify(ctx, *, token: str = None):
 
         # 8. Send confirmation and clean up
         print(f"SUCCESS: Verified {first_name} ({email}) and assigned role '{role.name}'.")
-        await ctx.send(f"Welcome, {ctx.author.mention}! You have been verified and assigned the **{role.name}** role. Welcome to the GDG ENSIA community!", delete_after=20)
+        await ctx.send(
+            f"Welcome, {ctx.author.mention}! Verified as {first_name} {last_name} and assigned the **{role.name}** role. Welcome to the GDG ENSIA community!"
+        )
 
         # Try to set their nickname to their real first name
         try:

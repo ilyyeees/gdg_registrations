@@ -35,6 +35,7 @@
         margin: 0 !important;
         padding: 0 !important;
         width: 100% !important;
+        background-color: #ffffff !important;
       }
       @media screen and (max-width: 600px) {
         .email-container {
@@ -48,6 +49,17 @@
           display: block !important;
           width: 100% !important;
         }
+        .stack-column-half td {
+          width: 50% !important;
+          padding: 0 4px 12px 4px !important;
+        }
+        .footer-no-stack td {
+          display: table-cell !important;
+        }
+        .footer-logo {
+          width: 80px !important;
+          padding-right: 12px !important;
+        }
         .mobile-side-padding {
           padding-left: 16px !important;
           padding-right: 16px !important;
@@ -56,6 +68,15 @@
           font-size: 26px !important;
           line-height: 34px !important;
         }
+        .browser-header td {
+          width: auto !important;
+        }
+        .url-bar {
+          padding: 6px 8px !important;
+        }
+        .url-text {
+          font-size: 10px !important;
+        }
       }
     </style>
   </head>
@@ -63,12 +84,7 @@
     style="
       margin: 0 !important;
       padding: 0 !important;
-      background: linear-gradient(
-        135deg,
-        #667eea 0%,
-        #764ba2 50%,
-        #f093fb 100%
-      );
+      background-color: #ffffff !important;
       font-family: 'Google Sans', 'Product Sans', Arial, sans-serif;
       color: #202124;
     "
@@ -89,18 +105,7 @@
       the digital world.
     </div>
 
-    <center
-      style="
-        width: 100%;
-        background: linear-gradient(
-          135deg,
-          #667eea 0%,
-          #764ba2 50%,
-          #f093fb 100%
-        );
-        padding: 40px 0;
-      "
-    >
+    <center style="width: 100%; background-color: #ffffff !important">
       <table
         role="presentation"
         cellspacing="0"
@@ -149,9 +154,10 @@
                           cellspacing="0"
                           cellpadding="0"
                           border="0"
+                          class="browser-header"
                         >
                           <tr>
-                            <td width="20%" valign="middle">
+                            <td width="15%" valign="middle">
                               <table
                                 role="presentation"
                                 cellspacing="0"
@@ -192,27 +198,33 @@
                                 </tr>
                               </table>
                             </td>
-                            <td width="60%" align="center" valign="middle">
+                            <td width="70%" align="center" valign="middle">
                               <div
+                                class="url-bar"
                                 style="
                                   background: #f1f3f4;
                                   border-radius: 8px;
-                                  padding: 6px 16px;
+                                  padding: 6px 12px;
+                                  overflow: hidden;
                                 "
                               >
                                 <p
+                                  class="url-text"
                                   style="
                                     margin: 0;
                                     font-size: 12px;
                                     color: #5f6368;
                                     font-weight: 500;
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
                                   "
                                 >
                                   🌐 gdg-ensia.dev/welcome
                                 </p>
                               </div>
                             </td>
-                            <td width="20%" align="right">
+                            <td width="15%" align="right">
                               <img
                                 src="https://i.imgur.com/m26gPrM.png"
                                 width="36"
@@ -331,7 +343,9 @@
                               >
                                 <span style="color: #68d391">name</span>
                                 <span style="color: #cbd5e0">:</span>
-                                <span style="color: #f6ad55">"You"</span>
+                                <span style="color: #f6ad55"
+                                  >"{{FIRST_NAME}}_{{LAST_NAME}}"</span
+                                >
                                 <span style="color: #cbd5e0">,</span>
                               </p>
                               <p
@@ -584,12 +598,13 @@
                     class="mobile-side-padding"
                     style="padding: 8px 40px 32px"
                   >
-                    <tr class="stack-column">
+                    <tr class="footer-no-stack">
                       <td
                         width="35%"
                         valign="top"
                         style="padding: 0 20px 20px 0"
                         align="center"
+                        class="footer-logo"
                       >
                         <img
                           src="https://i.imgur.com/Z5GFKzb.png"
@@ -683,6 +698,7 @@
                           cellspacing="0"
                           cellpadding="0"
                           border="0"
+                          style="width: auto !important"
                         >
                           <tr>
                             <td style="padding-right: 10px">

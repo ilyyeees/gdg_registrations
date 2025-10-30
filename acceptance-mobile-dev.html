@@ -41,7 +41,7 @@
         margin: 0 !important;
         padding: 0 !important;
         width: 100% !important;
-        background-color: #0d1117;
+        background-color: #ffffff !important;
       }
       @media screen and (max-width: 600px) {
         .email-container {
@@ -62,8 +62,15 @@
           width: 100% !important;
         }
         .stack-column-half td {
-          width: 100% !important;
-          padding: 0 0 16px 0 !important;
+          width: 50% !important;
+          padding: 0 4px 12px 4px !important;
+        }
+        .footer-no-stack td {
+          display: table-cell !important;
+        }
+        .footer-logo {
+          width: 80px !important;
+          padding-right: 12px !important;
         }
         .mobile-side-padding {
           padding-left: 16px !important;
@@ -84,7 +91,6 @@
     style="
       margin: 0 !important;
       padding: 0 !important;
-      background-color: #0d1117;
       font-family: 'Google Sans', 'Roboto', Arial, sans-serif;
       color: #c9d1d9;
     "
@@ -108,8 +114,7 @@
     <center
       style="
         width: 100%;
-        background-color: #0d1117;
-        padding: 40px 0;
+        background-color: #ffffff !important;
       "
     >
       <table
@@ -196,7 +201,7 @@
                                 color: #c9d1d9;
                               "
                             >
-                              📶 5G 🔋
+                              📶&nbsp;5G&nbsp;🔋
                             </td>
                           </tr>
                         </table>
@@ -255,7 +260,7 @@
                           "
                         >
                           Welcome to the team that builds the future, one app at
-                          a time 🚀
+                          a time
                         </p>
                       </td>
                     </tr>
@@ -504,12 +509,13 @@
                       padding: 8px 24px 24px;
                     "
                   >
-                    <tr class="stack-column">
+                    <tr class="footer-no-stack">
                       <td
                         width="35%"
                         valign="top"
                         style="padding: 0 20px 20px 0"
                         align="center"
+                        class="footer-logo"
                       >
                         <img
                           src="https://i.imgur.com/Z5GFKzb.png"
@@ -598,6 +604,7 @@
                           cellspacing="0"
                           cellpadding="0"
                           border="0"
+                          style="width: auto !important"
                         >
                           <tr>
                             <td style="padding-right: 10px">
