@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Welcome to GDG ENSIA — AI Team</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700;900&family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body,
+      table,
+      td,
+      a {
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+      }
+      table,
+      td {
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+      }
+      img {
+        -ms-interpolation-mode: bicubic;
+        border: 0;
+        height: auto;
+        line-height: 100%;
+        outline: none;
+        text-decoration: none;
+        display: block;
+      }
+      table {
+        border-collapse: collapse !important;
+      }
+      body {
+        height: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+        background-color: #0d1117;
+      }
+      .matrix-cell {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 12px;
+        color: #30363d;
+        border: 1px solid #21262d;
+      }
+      @media screen and (max-width: 600px) {
+        .email-container {
+          width: 100% !important;
+        }
+        table {
+          width: 100% !important;
+        }
+        .stack-column,
+        .stack-column td {
+          display: block !important;
+          width: 100% !important;
+        }
+        .stack-column-half td {
+          width: 100% !important;
+          padding: 0 0 16px 0 !important;
+        }
+        .mobile-side-padding {
+          padding-left: 16px !important;
+          padding-right: 16px !important;
+        }
+        .hero-title {
+          font-size: 36px !important;
+          line-height: 44px !important;
+        }
+        .matrix-cell {
+          width: 12px !important;
+          height: 12px !important;
+          line-height: 12px !important;
+          font-size: 8px !important;
+        }
+      }
+    </style>
+  </head>
+  <body
+    style="
+      margin: 0 !important;
+      padding: 0 !important;
+      background-color: #0d1117;
+      font-family: 'Google Sans', 'Roboto', Arial, sans-serif;
+      color: #c9d1d9;
+    "
+  >
+    <div
+      style="
+        display: none;
+        font-size: 1px;
+        line-height: 1px;
+        max-height: 0px;
+        max-width: 0px;
+        opacity: 0;
+        overflow: hidden;
+        mso-hide: all;
+      "
+    >
+      [SYSTEM_ONLINE] Welcome, AI Engineer. Your network is active.
+    </div>
+
+    <center style="width: 100%; background-color: #0d1117; padding: 40px 0">
+      <table
+        role="presentation"
+        cellspacing="0"
+        cellpadding="0"
+        border="0"
+        align="center"
+        width="600"
+        class="email-container"
+        style="margin: 0 auto"
+      >
+        <tr>
+          <td style="padding: 0 16px">
+            <table
+              role="presentation"
+              cellspacing="0"
+              cellpadding="0"
+              border="0"
+              width="100%"
+              style="
+                max-width: 600px;
+                margin: 0 auto;
+                background-color: #161b22;
+                border-radius: 24px;
+                box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+                overflow: hidden;
+                border: 1px solid #30363d;
+              "
+            >
+              <tr>
+                <td
+                  style="
+                    padding: 40px 40px 32px;
+                    border-bottom: 1px solid #30363d;
+                  "
+                  class="mobile-side-padding"
+                >
+                  <table
+                    role="presentation"
+                    width="100%"
+                    cellspacing="0"
+                    cellpadding="0"
+                    border="0"
+                  >
+                    <tr>
+                      <td style="padding-bottom: 24px">
+                        <img
+                          src="https://i.imgur.com/m26gPrM.png"
+                          width="64"
+                          alt="GDG ENSIA"
+                          style="border-radius: 50%"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p
+                          style="
+                            margin: 0 0 16px;
+                            font-family: 'Roboto Mono', monospace;
+                            font-size: 14px;
+                            font-weight: 700;
+                            letter-spacing: 0.1em;
+                            color: #4285f4;
+                          "
+                        >
+                          [SYSTEM_BOOT: AI ENGINEER]
+                        </p>
+                        <h1
+                          class="hero-title"
+                          style="
+                            margin: 0 0 16px;
+                            font-size: 44px;
+                            line-height: 52px;
+                            font-weight: 900;
+                            color: #ffffff;
+                          "
+                        >
+                          Welcome to the
+                          <span style="color: #00ffff; font-weight: 700"
+                            >Network</span
+                          >, {{FIRST_NAME}}.
+                        </h1>
+                        <p
+                          style="
+                            margin: 0;
+                            font-size: 18px;
+                            line-height: 28px;
+                            color: #c9d1d9;
+                          "
+                        >
+                          You are now a node in the GDG ENSIA Intelligence Core.
+                          Your models are ready to train.
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding: 40px 40px 0" class="mobile-side-padding">
+                  <table
+                    role="presentation"
+                    width="100%"
+                    cellspacing="0"
+                    cellpadding="0"
+                    border="0"
+                  >
+                    <tr>
+                      <td
+                        style="
+                          background-color: #0d1117;
+                          border-radius: 12px;
+                          padding: 24px;
+                          border: 1px solid #30363d;
+                        "
+                      >
+                        <p
+                          style="
+                            margin: 0 0 20px;
+                            font-family: 'Roboto Mono', monospace;
+                            font-size: 14px;
+                            font-weight: 700;
+                            color: #c9d1d9;
+                          "
+                        >
+                          Input Data: Matrix(25x10)
+                        </p>
+                        <table
+                          role="presentation"
+                          cellspacing="0"
+                          cellpadding="0"
+                          border="0"
+                          style="border-collapse: collapse"
+                        >
+                          <script>
+                            for (let i = 0; i < 5; i++) {
+                              document.write('<tr>');
+                              for (let j = 0; j < 25; j++) {
+                                document.write(
+                                  '<td class="matrix-cell">' +
+                                    Math.round(Math.random()) +
+                                    '</td>'
+                                );
+                              }
+                              document.write('</tr>');
+                            }
+                          </script>
+                          <tr>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                          </tr>
+                          <tr>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                          </tr>
+                          <tr>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">1</td>
+                          </tr>
+                          <tr>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">0</td>
+                          </tr>
+                          <tr>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">0</td>
+                            <td class="matrix-cell">1</td>
+                            <td class="matrix-cell">1</td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding: 40px 40px 40px" class="mobile-side-padding">
+                  <table
+                    role="presentation"
+                    width="100%"
+                    cellspacing="0"
+                    cellpadding="0"
+                    border="0"
+                  >
+                    <tr>
+                      <td style="padding-bottom: 24px">
+                        <p
+                          style="
+                            margin: 0;
+                            font-family: 'Roboto Mono', monospace;
+                            font-size: 14px;
+                            font-weight: 700;
+                            color: #c9d1d9;
+                          "
+                        >
+                          // Processing: Hidden_Layers(3)
+                        </p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td style="padding-bottom: 16px">
+                        <table
+                          role="presentation"
+                          width="100%"
+                          cellspacing="0"
+                          cellpadding="0"
+                          border="0"
+                          style="
+                            background: #0d1117;
+                            border-radius: 12px;
+                            border: 1px solid #30363d;
+                          "
+                        >
+                          <tr>
+                            <td style="padding: 24px">
+                              <p
+                                style="
+                                  margin: 0 0 16px;
+                                  font-size: 16px;
+                                  font-weight: 700;
+                                  color: #4285f4;
+                                "
+                              >
+                                Layer_01: Machine Learning
+                              </p>
+
+                              <p
+                                style="
+                                  margin: 0 0 12px;
+                                  font-size: 14px;
+                                  line-height: 22px;
+                                  color: #c9d1d9;
+                                "
+                              >
+                                The core logic. Train models for regression,
+                                classification, and clustering.
+                              </p>
+                              <code
+                                style="
+                                  background: #161b22;
+                                  padding: 4px 8px;
+                                  border-radius: 4px;
+                                  font-family: 'Roboto Mono', monospace;
+                                  color: #8b949e;
+                                "
+                                >tensorflow</code
+                              >
+                              <code
+                                style="
+                                  background: #161b22;
+                                  padding: 4px 8px;
+                                  border-radius: 4px;
+                                  font-family: 'Roboto Mono', monospace;
+                                  color: #8b949e;
+                                "
+                                >pytorch</code
+                              >
+                              <code
+                                style="
+                                  background: #161b22;
+                                  padding: 4px 8px;
+                                  border-radius: 4px;
+                                  font-family: 'Roboto Mono', monospace;
+                                  color: #8b949e;
+                                "
+                                >scikit-learn</code
+                              >
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td style="padding-bottom: 16px">
+                        <table
+                          role="presentation"
+                          width="100%"
+                          cellspacing="0"
+                          cellpadding="0"
+                          border="0"
+                          style="
+                            background: #0d1117;
+                            border-radius: 12px;
+                            border: 1px solid #30363d;
+                          "
+                        >
+                          <tr>
+                            <td style="padding: 24px">
+                              <p
+                                style="
+                                  margin: 0 0 16px;
+                                  font-size: 16px;
+                                  font-weight: 700;
+                                  color: #00ffff;
+                                "
+                              >
+                                Layer_02: Computer Vision
+                              </p>
+                              <img
+                                src="https://i.imgur.com/1dgS4UC.png"
+                                alt="Convolutional Neural Network (CNN)"
+                                style="
+                                  width: 100%;
+                                  max-width: 100%;
+                                  height: auto;
+                                  margin: 0 0 16px;
+                                  border-radius: 8px;
+                                "
+                              />
+                              <p
+                                style="
+                                  margin: 0 0 12px;
+                                  font-size: 14px;
+                                  line-height: 22px;
+                                  color: #c9d1d9;
+                                "
+                              >
+                                Process and understand visual data. Focus on
+                                image recognition, segmentation, and detection.
+                              </p>
+                              <code
+                                style="
+                                  background: #161b22;
+                                  padding: 4px 8px;
+                                  border-radius: 4px;
+                                  font-family: 'Roboto Mono', monospace;
+                                  color: #8b949e;
+                                "
+                                >OpenCV</code
+                              >
+                              <code
+                                style="
+                                  background: #161b22;
+                                  padding: 4px 8px;
+                                  border-radius: 4px;
+                                  font-family: 'Roboto Mono', monospace;
+                                  color: #8b949e;
+                                "
+                                >YOLO</code
+                              >
+                              <code
+                                style="
+                                  background: #161b22;
+                                  padding: 4px 8px;
+                                  border-radius: 4px;
+                                  font-family: 'Roboto Mono', monospace;
+                                  color: #8b949e;
+                                "
+                                >CNN</code
+                              >
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td style="padding-bottom: 16px">
+                        <table
+                          role="presentation"
+                          width="100%"
+                          cellspacing="0"
+                          cellpadding="0"
+                          border="0"
+                          style="
+                            background: #0d1117;
+                            border-radius: 12px;
+                            border: 1px solid #30363d;
+                          "
+                        >
+                          <tr>
+                            <td style="padding: 24px">
+                              <p
+                                style="
+                                  margin: 0 0 16px;
+                                  font-size: 16px;
+                                  font-weight: 700;
+                                  color: #34a853;
+                                "
+                              >
+                                Layer_03: NLP
+                              </p>
+                              <img
+                                src="https://i.imgur.com/GGR0IV5.png"
+                                alt="Transformer Model (Attention Mechanism)"
+                                style="
+                                  width: 100%;
+                                  max-width: 100%;
+                                  height: auto;
+                                  margin: 0 0 16px;
+                                  border-radius: 8px;
+                                "
+                              />
+                              <p
+                                style="
+                                  margin: 0 0 12px;
+                                  font-size: 14px;
+                                  line-height: 22px;
+                                  color: #c9d1d9;
+                                "
+                              >
+                                Understand and generate human language. Build
+                                transformers, chatbots, and sentiment analyzers.
+                              </p>
+                              <code
+                                style="
+                                  background: #161b22;
+                                  padding: 4px 8px;
+                                  border-radius: 4px;
+                                  font-family: 'Roboto Mono', monospace;
+                                  color: #8b949e;
+                                "
+                                >Transformers</code
+                              >
+                              <code
+                                style="
+                                  background: #161b22;
+                                  padding: 4px 8px;
+                                  border-radius: 4px;
+                                  font-family: 'Roboto Mono', monospace;
+                                  color: #8b949e;
+                                "
+                                >NLTK</code
+                              >
+                              <code
+                                style="
+                                  background: #161b22;
+                                  padding: 4px 8px;
+                                  border-radius: 4px;
+                                  font-family: 'Roboto Mono', monospace;
+                                  color: #8b949e;
+                                "
+                                >spaCy</code
+                              >
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <tr>
+                <td
+                  style="padding: 32px 40px 40px; border-top: 1px solid #30363d"
+                  class="mobile-side-padding"
+                >
+                  <table
+                    role="presentation"
+                    width="100%"
+                    cellspacing="0"
+                    cellpadding="0"
+                    border="0"
+                  >
+                    <tr>
+                      <td style="padding-bottom: 24px">
+                        <p
+                          style="
+                            margin: 0;
+                            font-family: 'Roboto Mono', monospace;
+                            font-size: 14px;
+                            font-weight: 700;
+                            color: #c9d1d9;
+                          "
+                        >
+                          // Output: Access_Token
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        style="
+                          background: #0d1117;
+                          border-radius: 12px;
+                          padding: 24px;
+                          border: 1px solid #30363d;
+                        "
+                      >
+                        <p
+                          style="
+                            margin: 0 0 8px;
+                            font-size: 13px;
+                            font-weight: 700;
+                            color: #8b949e;
+                            text-transform: uppercase;
+                            letter-spacing: 0.05em;
+                          "
+                        >
+                          Your Verification Token
+                        </p>
+                        <p
+                          style="
+                            margin: 0 0 16px;
+                            font-size: 24px;
+                            font-weight: 700;
+                            color: #00ffff;
+                            font-family: 'Roboto Mono', 'Courier New', monospace;
+                            letter-spacing: 2px;
+                          "
+                        >
+                          {{VERIFICATION_TOKEN}}
+                        </p>
+                        <p
+                          style="
+                            margin: 0;
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: #c9d1d9;
+                          "
+                        >
+                          Use this token with
+                          <code
+                            style="
+                              background: #30363d;
+                              padding: 2px 6px;
+                              border-radius: 4px;
+                              font-family: 'Roboto Mono', 'Courier New',
+                                monospace;
+                              color: #00ffff;
+                              font-weight: 700;
+                            "
+                            >!verify</code
+                          >
+                          in the #verification channel to activate your role on
+                          Discord.
+                        </p>
+                      </td>
+                      Vertical spacer
+                    </tr>
+                    <tr>
+                      <td style="padding-top: 40px">
+                        <table
+                          role="presentation"
+                          cellspacing="0"
+                          cellpadding="0"
+                          border="0"
+                          width="100%"
+                        >
+                          <tr>
+                            <td align="center">
+                              <table
+                                role="presentation"
+                                cellspacing="0"
+                                cellpadding="0"
+                                border="0"
+                              >
+                                <tr>
+                                  <td
+                                    align="center"
+                                    style="
+                                      background: #4285f4;
+                                      border-radius: 100px;
+                                      box-shadow: 0 8px 24px
+                                        rgba(66, 133, 244, 0.4);
+                                    "
+                                  >
+                                    <a
+                                      href="https://discord.gg/YourGDGServer"
+                                      target="_blank"
+                                      style="
+                                        display: inline-block;
+                                        padding: 16px 48px;
+                                        font-size: 16px;
+                                        font-weight: 700;
+                                        color: #ffffff;
+                                        text-decoration: none;
+                                        border-radius: 100px;
+                                      "
+                                      class="cta-button"
+                                    >
+                                      Join the Discord Server
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <tr>
+                <td
+                  style="
+                    padding: 32px 40px 32px;
+                    background-color: #0d1117;
+                    border-top: 1px solid #30363d;
+                  "
+                  class="mobile-side-padding"
+                >
+                  <table
+                    role="presentation"
+                    width="100%"
+                    cellspacing="0"
+                    cellpadding="0"
+                    border="0"
+                  >
+                    <tr class="stack-column">
+                      <td
+                        width="35%"
+                        valign="top"
+                        style="padding: 0 20px 20px 0"
+                        align="center"
+                      >
+                        <img
+                          src="https://i.imgur.com/Z5GFKzb.png"
+                          width="140"
+                          alt="GDG ENSIA logo"
+                          style="
+                            display: block;
+                            border-radius: 12px;
+                            margin: 0 auto;
+                          "
+                        />
+                      </td>
+                      <td
+                        width="65%"
+                        valign="top"
+                        style="padding: 0 0 20px 20px"
+                      >
+                        <p
+                          style="
+                            margin: 0 0 6px;
+                            font-size: 18px;
+                            font-weight: 700;
+                            color: #e8eaed;
+                          "
+                        >
+                          GDG ENSIA
+                        </p>
+                        <p
+                          style="
+                            margin: 0 0 12px;
+                            font-size: 14px;
+                            color: #8b949e;
+                            line-height: 20px;
+                          "
+                        >
+                          Google Developers Group on Campus: ENSIA
+                        </p>
+                        <p
+                          style="
+                            margin: 0 0 16px;
+                            font-size: 14px;
+                            font-weight: 600;
+                          "
+                        >
+                          <span style="color: #4285f4">Connect</span>,
+                          <span style="color: #ea4335">Learn</span>,
+                          <span style="color: #34a853">and</span>
+                          <span style="color: #fbbc04">Grow</span>
+                        </p>
+
+                        <p
+                          style="
+                            margin: 0 0 8px;
+                            font-size: 14px;
+                            color: #8b949e;
+                            line-height: 20px;
+                          "
+                        >
+                          <strong style="color: #e8eaed">Email:</strong>
+                          <a
+                            href="mailto:gdg@ensia.edu.dz"
+                            style="color: #4285f4; text-decoration: none"
+                            >gdg@ensia.edu.dz</a
+                          >
+                        </p>
+                        <p
+                          style="
+                            margin: 0 0 4px;
+                            font-size: 14px;
+                            color: #8b949e;
+                            line-height: 20px;
+                          "
+                        >
+                          <strong style="color: #e8eaed">Location:</strong>
+                          Technological Pole, Sidi Abdellah
+                        </p>
+                        <p
+                          style="
+                            margin: 0 0 16px;
+                            font-size: 14px;
+                            color: #8b949e;
+                            line-height: 20px;
+                          "
+                        >
+                          Ecole Nationale Supérieure de l'Intelligence
+                          Artificielle – Algiers
+                        </p>
+
+                        <table
+                          role="presentation"
+                          cellspacing="0"
+                          cellpadding="0"
+                          border="0"
+                        >
+                          <tr>
+                            <td style="padding-right: 10px">
+                              <a
+                                href="https://dz.linkedin.com/company/gdg-ensia"
+                                target="_blank"
+                                style="display: inline-block"
+                                ><img
+                                  src="https://i.imgur.com/QIPC0f3.jpg"
+                                  width="28"
+                                  height="28"
+                                  alt="LinkedIn"
+                                  style="border-radius: 4px"
+                              /></a>
+                            </td>
+                            <td style="padding-right: 10px">
+                              <a
+                                href="https://www.instagram.com/gdg_ensia/"
+                                target="_blank"
+                                style="display: inline-block"
+                                ><img
+                                  src="https://i.imgur.com/QHeKKiI.png"
+                                  width="28"
+                                  height="28"
+                                  alt="Instagram"
+                                  style="border-radius: 4px"
+                              /></a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        colspan="2"
+                        style="padding-top: 24px; border-top: 1px solid #30363d"
+                      >
+                        <table
+                          role="presentation"
+                          width="100%"
+                          cellspacing="0"
+                          cellpadding="0"
+                          border="0"
+                        >
+                          <tr>
+                            <td align="center" style="padding: 16px 0 0">
+                              <p
+                                style="
+                                  margin: 0 0 6px;
+                                  font-size: 13px;
+                                  line-height: 18px;
+                                  color: #8b949e;
+                                "
+                              >
+                                GDG on Campus: ENSIA · Technological Pole, Sidi
+                                Abdellah · Algiers
+                              </p>
+                              <p
+                                style="
+                                  margin: 0 0 12px;
+                                  font-size: 12px;
+                                  color: #5f6368;
+                                "
+                              >
+                                © 2025 GDG on Campus: ENSIA
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>

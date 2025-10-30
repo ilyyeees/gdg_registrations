@@ -1,0 +1,51 @@
+GDG ENSIA Setup Checklist
+=========================
+
+## Prerequisites ✓
+- [✓] Python installed
+- [✓] Virtual environment created
+- [✓] Required packages installed (pandas, discord.py, openpyxl)
+
+## Configuration (config.py)
+- [✓] EMAIL_ADDRESS configured
+- [✓] EMAIL_PASSWORD (16-char App Password) configured
+- [✓] BOT_TOKEN configured
+- [✓] DISCORD_INVITE_LINK configured
+- [✓] VERIFICATION_CHANNEL_ID - **YOU NEED TO UPDATE THIS!**
+      → Right-click your #verification channel in Discord → Copy ID
+- [✓] Check all Role IDs are correct
+- [✓] Update Robotics role_id if needed
+
+## Files to Prepare
+- [ ] Place all 8 CSV files in the main directory:
+      - Registrations.xlsx - IT_AI_Accepted.csv
+      - Registrations.xlsx - IT_Web Development_Accepted.csv
+      - Registrations.xlsx - IT_Mobile Development_Accepted.csv
+      - Registrations.xlsx - IT_Robotics_Accepted.csv
+      - Registrations.xlsx - Marketing_Accepted.csv
+      - Registrations.xlsx - Design_Accepted.csv
+      - Registrations.xlsx - Event_Accepted.csv
+      - Registrations.xlsx - Relex_Accepted.csv
+
+- [ ] Update HTML templates (if not already done):
+      - Replace names with {{FIRST_NAME}}
+      - Add {{VERIFICATION_TOKEN}} where needed
+
+## Discord Bot Setup
+- [ ] Bot has been added to your Discord server
+- [ ] Bot has "Manage Roles" permission
+- [ ] Bot's role is ABOVE the roles it needs to assign
+- [ ] All three Privileged Gateway Intents are enabled:
+      → Presence Intent
+      → Server Members Intent
+      → Message Content Intent
+
+## Testing
+- [ ] Run: python send_invites.py (to test email sending)
+- [ ] Run: python bot.py (to start the Discord bot)
+- [ ] Test with a sample verification token
+
+## Notes
+- Keep bot.py running in a terminal to handle verifications
+- The send_invites.py script only needs to run once (or when adding new members)
+- Check member_database.db to see all registered members
